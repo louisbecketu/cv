@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>CV Alternance Louis Beck</title>
+
+	<link rel="icon" href="images/favicon.png" sizes="96x96">
+
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/animations.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/gameList.css" />
+	<link rel="stylesheet" type="text/css" href="css/help.css" />
+	<link rel="stylesheet" type="text/css" href="css/about.css" />
+	<link rel="stylesheet" type="text/css" href="css/gameDetail.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- inclusion du fichier js compilé par babel dans le dossier build -->
+	<script src="build/main.bundle.js" defer></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="/" class="logo">
+				<span><em>CV</em> Louis Beck</span>
+			</a>
+			<ul class="mainMenu">
+				<li><a href="/" class="gameListLink">Présentation</a></li>
+				<li><a href="/competences" class="helpLink">Compétences</a></li>
+				<li><a href="/qualites" class="helpLink">Qualités</a></li>
+				<li><a href="/projets" class="gameDetailLink">Mes projets</a></li>
+				<li><a href="/experiences" class="helpLink">Expériences</a></li>
+				<li><a href="/contact" class="helpLink">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="viewContainer">
+		<header class="viewTitle"></header>
+		<div class="viewContent activeOnly">
+			<article class="gameList">
+				<section class="results"></section>
+			</article>
+			<article class="gameDetail">Contenu de la vue "Détail"</article>
+			<article class="about"></article>
+			<article class="competencesQualites"></article>
+			<article class="help">
+				<form class="helpForm">
+					<label>
+						Sujet
+						<input type="text" name="subject" />
+					</label>
+					<label>
+						Votre message
+						<textarea name="body" rows="5"></textarea>
+					</label>
+					<button type="submit">Envoyer</button>
+				</form>
+			</article>
+			<article class="contact"></article>
+		</div>
+	</section>
+	<footer>
+		<div class="d-flex justify-content-between">
+			<div>
+				<img src="images/logo-iut.png" />
+			</div>
+			<div>
+				<a href="mailto:louis.beck.etu@univ-lille.fr"><i class="bi bi-envelope-fill"></i></a>
+				<a href="https://www.linkedin.com/in/louis-beck-7b4b30333/" target="_blank"><i class="bi bi-linkedin"></i></a>
+				<a href="https://github.com/louisbecketu/Mes_Projets" target="_blank"><i class="bi bi-github"></i></a>
+			</div>
+		</div>
+		<div></div>
+	</footer>
+</body>
+</html>

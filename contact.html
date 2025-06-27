@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="cards">
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Mail Universitaire</h2>
+            <a href="mailto:prenom.nom@etu.universite.fr">louis.beck.etu@univ-lille.fr</a>
+        </div>
+        <div class="card">
+            <div class="icon">📧</div>
+            <h2>Email Personnel</h2>
+            <a href="mailto:prenom.nom@email.com">beck.louis12@gmail.com</a>
+        </div>
+        <div class="card">
+            <div class="icon">📱</div>
+            <h2>Téléphone</h2>
+            <a href="tel:+33123456789">01 23 45 67 89</a>
+        </div>
+        <div class="card">
+            <div class="icon">💼</div>
+            <h2>LinkedIn</h2>
+            <a href="https://www.linkedin.com/in/louis-beck-7b4b30333/" target="_blank">linkedin.com/in/louis-beck</a>
+        </div>
+    </div>
+</div>
+<style>
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .cards .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 24px 32px;
+        min-width: 260px;
+        max-width: 320px;
+        text-align: center;
+        transition: box-shadow 0.2s;
+    }
+    .cards .card:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .cards .card h2 {
+        margin-top: 0;
+        color: #1976d2;
+        font-size: 1.2em;
+    }
+    .cards .card a {
+        color: #1976d2;
+        text-decoration: none;
+        word-break: break-all;
+    }
+    .cards .card a:hover {
+        text-decoration: underline;
+    }
+    .icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #1976d2;
+    }
+</style>

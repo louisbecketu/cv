@@ -1,0 +1,171 @@
+.about {
+}
+.about .aboutContent {
+	font-size: 24px;
+	color: white;
+	font-weight: 200;
+	padding-top: 50px;
+	padding-bottom: 80px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.about h2 {
+	margin: 0;
+}
+.about.active .aboutContent > h2,
+.about.active .aboutContent > p,
+.about.active .aboutContent > .links,
+.about.active .aboutContent > .button {
+	position: relative;
+	z-index: 1;
+	animation: fadeIn 1.5s cubic-bezier(0.19, 1, 0.22, 1) .2s, slideUp 1.8s cubic-bezier(0.19, 1, 0.22, 1) .2s;
+	animation-fill-mode: both;
+}
+.about.active .aboutContent > p {
+	animation-delay: .3s;
+}
+.about.active .aboutContent > .links {
+	animation-delay: .4s;
+}
+.about.active .aboutContent > .button {
+	display: block;
+	text-decoration: none;
+	animation-delay: .5s;
+}
+.about .logo {
+	color: white;
+	font-size: 40px;
+}
+.about .logo span {
+	font-size: 40px;
+}
+.about .logo img {
+	filter: brightness(2);
+	height: 80px;
+}
+.about .logo em {
+	color: #f0db4f;
+}
+.about .logo em::first-letter {
+	color: inherit;
+}
+.about ul.links {
+	max-width: 700px;
+}
+.about ul.links {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 20px;
+}
+.about ul.links li {
+	flex: 1;
+	flex-basis: calc(50%-20px);
+	display: flex;
+	white-space: nowrap;
+}
+.about ul.links li a {
+	flex:1;
+	color: white;
+	font-weight: 300;
+	position: relative;
+	display: block;
+	padding: 18px 0;
+	text-decoration: none;
+	transition: all .4s cubic-bezier(0.19, 1, 0.22, 1);
+	text-decoration: underline wavy;
+	text-decoration-color: transparent;
+}
+.about ul.links li a:hover {
+	color: #67c1f5;
+	text-decoration-color: currentColor;
+}
+.about ul.links li a:before{
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #2EBFFF;
+}
+.about ul.links li a:after {
+	content: "REPOSITORY";
+	position: absolute;
+	top: 0;
+	left: 15px;
+	font-size: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: #AEAEAE;
+}
+.about ul.links li:last-child a:before {
+	background-color: #BAFF2E;
+}
+.about ul.links li:last-child a:after {
+	content: "FORMATION";
+}
+
+.about .button {
+	justify-content: flex-start;
+	padding: 15px 25px;
+	text-align: left;
+	width: 300px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.03em;
+}
+
+.cards .card h2,
+.cards .card p {
+  color: #1976d2;
+}
+
+.moi .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre tout le contenu */
+}
+
+.moi .cards .card .icon,
+.moi .cards .card h2 {
+  align-self: center;
+  text-align: center;
+}
+
+.moi .cards .card .texte {
+  max-width: 90%;      /* ou 600px selon ton design */
+  margin: 0 auto;
+}
+
+.moi .cards .card .texte p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.moi .cards .card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 100%; /* Augmente la largeur de la card */
+  height: 100%; /* Optionnel : augmente la hauteur minimale */
+}
+
+.about .cards {
+    display: flex;
+    flex-direction: column; /* une card par ligne */
+    gap: 20px;
+    align-items: stretch;   /* les cards prennent toute la largeur */
+}
+
+.about .cards .card {
+    width: 100%;            /* prend toute la largeur du parent */
+    min-width: 0;           /* évite le débordement */
+    max-width: 100%;
+    box-sizing: border-box;
+}
